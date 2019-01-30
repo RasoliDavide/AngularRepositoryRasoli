@@ -1,15 +1,16 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<form >
-  <h3 >Add a Link</h3>
-  <div>
-    <label for="title">Title:</label>
-    <input name="title" #newtitle> <!--//Aggiunta una variabile di template-->
-  </div>
-  <div>
-    <label for="link">Link:</label>
-  <input name="link" #newlink> <!--//Aggiunta una variabile di template-->
-  </div>
-  <button (click)="addArticle(newtitle, newlink)"> <!--//Passiamo le variabili come parametro-->
-  Submit link
-  </button>
-</form>
+0<div class="container" style="background-color:black;">
+  <form class="jumbotron" style="background-color:black;">
+      <h3 class="display-4" style="color:white">Aggiungi un collegamento</h3>
+      <div class="form-group">
+        <label for="title"  style="color:white">Titolo:</label>
+        <input name="title" #newtitle class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="link" style="color:white">Link:</label>
+        <input name="link" #newlink class="form-control">
+      </div>
+    <button (click)="addArticle(newtitle, newlink)" class="btn btn-success">
+      Submit link
+    </button>
+  </form>
+</div>
