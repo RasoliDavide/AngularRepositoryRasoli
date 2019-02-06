@@ -1,0 +1,19 @@
+Componenti di un'applicazione:
+AppComponent <- UserList -> UserItem
+In TypeScript:
+export class UserItemComponent implements OnInit
+{
+	@Input name: string;
+	constructor
+	{
+		
+	}	
+	ngOnInit(){}
+}
+In HTML:
+<ul>
+	<li *ngFor="let name of names">
+		<app-user-item [name]="name">
+		</app-user-item>
+	</li>
+</ul>
