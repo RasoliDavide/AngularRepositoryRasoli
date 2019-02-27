@@ -13,7 +13,7 @@
       Submit link
     </button>
   </form>
-  <app-article>
-  </app-article>
-	
+  
+	<app-article *ngFor="let art of sortedArticles()" [article]="art"></app-article>
+
 </div>
